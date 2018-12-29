@@ -1,0 +1,13 @@
+<div class="app-file-input">
+  <div *ngFor="let item of files;let i = index" class="file-container">
+    <input class="file-text" [ngStyle]="style" value="{{item.name}}" readonly>
+    <span class="delete-btn" (click)="deleteFile(i,item.name)">删除</span>
+  </div>
+  <div class="file-upload-container">
+    <input class="file-text" [ngStyle]="style" readonly placeholder="选择文件">
+    <label class="file-upload-btn">
+      <input class="file-input" name="{{name}}" type="file" accept="{{accept}}" (change)="fileChange($event)" />
+      {{tipText}}
+    </label>
+  </div>
+</div>
