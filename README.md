@@ -11,5 +11,5 @@
   2.发布到npm
     npm publish
 
-## 备注：npm模块发布相关知识可上官网查找
+## 备注：将angular组件库发布到npm上，可参考[这里](https://blog.csdn.net/wanglei1991gao/article/details/85330204)
 
